@@ -7,7 +7,10 @@
     <meta name="author" content="Big Ton">
     <meta name="description" content="Big Ton | Reggae music">
     <meta name="keywords" content="keywords,here">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Dosis|Indie+Flower">
+
+
     <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css"
           integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
     <!--[if lte IE 8]>

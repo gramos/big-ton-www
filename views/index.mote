@@ -4,7 +4,7 @@
           % songs.each do |s|
 
             <div class="song-title">
-              {{ s }}
+              {{ s.tr("-", " ").capitalize }}
             </div>
 
             <div class="player">
@@ -21,9 +21,9 @@
 
         <div class="pure-u-1 pure-u-md-1-3">
           <div class="header"><h1>Descargar el disco completo</h1></div>
-          Creemos plenamente en que todos tenemos que poder acceder
+          <p>Creemos plenamente en que todos tenemos que poder acceder
           a la cultura, apoyamos la cultura libre, ponemos nuestro disco
-5A          para que cualquiera lo pueda descargar gratis, que lo disfruten. <br/>
+          para que cualquiera lo pueda descargar gratis, que lo disfruten. </p>
 
           <br />
           <div>
@@ -36,17 +36,27 @@
           Ahora tengo el flow es el resultado de un largo tiempo de
           trabajo y búsqueda musical que se viene gestando desde hace años,
           es un proyecto independiente nacido en Arroyo Leyes - Santa Fe
-          mezclando distintos ritmos pero con una base sólida en el Reggae jamaiquino. </p>
-          <p>
-          Tenemos una sola misión y visión: <b>Divertirnos</b> haciendo lo que más nos gusta, no nos interesa la competencia ni ser mejores que nadie.</p>
+          mezclando distintos ritmos pero con una base sólida en el Reggae jamaiquino. Tenemos una sola misión y visión: <b>Divertirnos</b> haciendo lo que más nos gusta, no nos interesa la competencia ni ser mejores que nadie.</p>
 
 
         </div>
         <div class="pure-u-1 pure-u-md-1-3">
           <h1>Redes sociales</h1>
           <ul>
-          <li>Facebook: <a href="https://www.facebook.com/bigtonband">https://www.facebook.com/bigtonband</a></li>
+            <li>
+              <div class="fb-like" data-href="https://www.facebook.com/bigtonband/" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+             </li>
 
-          <li>Youtube: <a href="https://www.youtube.com/channel/UC0-_fs6xy4ljbQt-Xokzx3Q">https://www.youtube.com/channel/UC0-_fs6xy4ljbQt-Xokzx3Q</a></li>
+            <li><script src="https://apis.google.com/js/platform.js"></script>
+                <div class="g-ytsubscribe" data-channelid="UC0-_fs6xy4ljbQt-Xokzx3Q" data-layout="default" data-theme="dark" data-count="default"></div></li>
         </div>
+
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=103118131209";
+          fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));</script>
       </div><!-- pure-g -->
