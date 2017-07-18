@@ -14,9 +14,9 @@ Cuba.use Rack::Static,
 Cuba.define do
 
   on root do
-    songs = %w(medios-de-comunicacion ahora-tengo-el-flow letme-back
-               al-fin-es-viernes sigue-al-rastaman paren-de-fumigar
-               resistencia-contra-babilon solo-en-la-ciudad no-llego-a-fin-de-mes)
-    render 'index', {:songs => songs}
+    songs = %w(intro_sin-bajo no-tengo-verguenza mr-chief_sin-bajo resistencia-contra-babilon_sin-bajo medios-de-comunicacion_sin-bajo
+               ill-not-wait al-fin-es-viernes_sin-bajo no-soy-un-rudeboy sigue-al-rastaman_sin-bajo ahora-tengo-el-flow_sin-bajo)
+
+    render 'bass/index', {:songs => songs}
   end
 end

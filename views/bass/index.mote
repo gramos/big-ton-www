@@ -1,0 +1,41 @@
+      <div class="pure-g"><br/>
+        <div class="pure-u-1 pure-u-md-1-3" id="songs">
+          <div class="header"><h1>Escuchar online</h1></div>
+
+          <ol>
+          % songs.each do |s|
+            <li>
+            <div class="song-title">
+              {{ s.split("_").first.tr("-", " ").capitalize }}
+            </div>
+
+            <span class="player">
+              <audio controls>
+                <source src="ogg/sin-bajo/{{ s }}.ogg" type="audio/ogg">
+                <source src="mp3/sin-bajo/{{ s }}.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio>
+
+            </span>
+              <a href="mp3/{{ s }}.mp3" class="pure-button">Descargar</a>
+            </li>
+            % end
+
+         </ol>
+
+        </div>
+        <div class="pure-u-1 pure-u-md-1-3">
+          <div class="header"><h1>Lista de temas para el bajista</h1></div>
+          <p>Estos son los temas sin el bajo para practicarlos en casa, están en el mismo orden que los tocamos siempre.</p>
+          <br />
+
+
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=103118131209";
+          fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));</script>
+      </div><!-- pure-g -->
